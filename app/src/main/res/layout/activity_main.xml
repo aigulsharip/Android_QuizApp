@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2e313c"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/header" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/questionNumberText"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/rubikmedium"
+                android:text="Question №1"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/questionText"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Какой мессенждер самый популярный?"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/rubikregular"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center" >
+
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginEnd="20dp"
+            android:padding="3dp"
+            android:src="@drawable/answer11" />
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:padding="3dp"
+            android:src="@drawable/answer12" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/answer13"
+            android:layout_marginEnd="20dp"
+            android:padding = "3dp" />
+
+
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/answer14"
+            android:padding = "3dp" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/nextBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#7f60ff"
+        android:fontFamily="@font/rubikregular"
+        android:text="Продолжить"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp" >
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+
+
+
+
+</LinearLayout>
